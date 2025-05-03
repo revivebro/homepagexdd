@@ -1,83 +1,95 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>おすすめAVレビューまとめ | リバイブ</title>
-  <meta name="description" content="AV好き必見！DMMやDLsiteなど人気サービスや女優の体験レビュー記事を毎週更新。" />
-  <link rel="stylesheet" href="style.css" />
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
 
-  <!-- 構造化データ (SEO強化) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://revivebro.netlify.app/index.html"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "リバイブ管理人"
-    },
-    "datePublished": "2025-05-03",
-    "dateModified": "2025-05-03",
-    "name": "DMM見放題chライト体験レビュー",
-    "reviewBody": "DMM見放題chライトを実際に使ってみて感じたメリットと注意点をまとめています。おすすめ作品や登録の流れも紹介。",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "4",
-      "bestRating": "5"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "リバイブAVレビュー"
-    },
-    "image": "https://revivebro.netlify.app/images/dmm-light.jpg"
+header {
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+  flex: 1;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+
+.card-content p {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.card-content a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #e60033;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
   }
-  </script>
-</head>
-<body>
-  <header>
-    <h1>おすすめAVレビューまとめ</h1>
-    <p>話題のAV体験レビュー・サービス比較など</p>
-  </header>
 
-  <main>
-    <section class="card-container">
-      <div class="card full">
-        <img src="images/dmm-light.jpg" alt="DMM見放題chライト" />
-        <div class="card-content">
-          <h2>DMM見放題chライトは本当にお得？【体験レビュー】</h2>
-          <p>
-            DMM見放題chライトは月額550円でAVやバラエティが見放題のサブスク型サービスです。
-            実際に登録して体験してみたところ、コスパの良さが魅力的でした。
-          </p>
-
-          <h3>おすすめ作品</h3>
-          <ul>
-            <li>三上悠亜「彼女とイチャラブ旅行」</li>
-            <li>天使もえ「ずっと密着、我慢できない誘惑」</li>
-          </ul>
-
-          <h3>まとめ</h3>
-          <p>
-            古めの作品が中心ですが、人気女優の名作が多数。暇つぶしには最適です。
-            スマホでも快適に視聴でき、コスパは非常に高いと感じました。
-          </p>
-
-          <p class="affiliate-link">
-            👉 <a href="https://px.a8.net/svt/ejp?a8mat=XXXXX" target="_blank" rel="noopener noreferrer">
-              【公式】DMM見放題chライトに登録する
-            </a>
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 リバイブAVレビュー</p>
-  </footer>
-</body>
-</html>
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
