@@ -1,126 +1,83 @@
-/* リセット */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>おすすめAVレビューまとめ | リバイブ</title>
+  <meta name="description" content="AV好き必見！DMMやDLsiteなど人気サービスや女優の体験レビュー記事を毎週更新。" />
+  <link rel="stylesheet" href="style.css" />
 
-body {
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.8;
-}
-
-header {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 20px 10px;
-  text-align: center;
-}
-
-header p {
-  font-size: 0.9em;
-  color: #ccc;
-}
-
-main {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 20px;
-}
-
-/* カードレイアウト */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 300px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 15px;
-}
-
-.card-content h2 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.card-content p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* 記事ページ */
-.article {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-}
-
-.article h2 {
-  border-left: 4px solid #0066cc;
-  padding-left: 10px;
-  margin-top: 30px;
-}
-
-.article ul {
-  padding-left: 20px;
-}
-
-.article a {
-  color: #e60033;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.article a:hover {
-  text-decoration: underline;
-}
-
-.article-img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/* フッター */
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #888;
-  margin: 40px 0;
-}
-
-/* モバイル対応 */
-@media screen and (max-width: 600px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
+  <!-- 構造化データ (SEO強化) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://revivebro.netlify.app/index.html"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "リバイブ管理人"
+    },
+    "datePublished": "2025-05-03",
+    "dateModified": "2025-05-03",
+    "name": "DMM見放題chライト体験レビュー",
+    "reviewBody": "DMM見放題chライトを実際に使ってみて感じたメリットと注意点をまとめています。おすすめ作品や登録の流れも紹介。",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "4",
+      "bestRating": "5"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "リバイブAVレビュー"
+    },
+    "image": "https://revivebro.netlify.app/images/dmm-light.jpg"
   }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>おすすめAVレビューまとめ</h1>
+    <p>話題のAV体験レビュー・サービス比較など</p>
+  </header>
 
-  .card {
-    width: 90%;
-  }
-}
+  <main>
+    <section class="card-container">
+      <div class="card full">
+        <img src="images/dmm-light.jpg" alt="DMM見放題chライト" />
+        <div class="card-content">
+          <h2>DMM見放題chライトは本当にお得？【体験レビュー】</h2>
+          <p>
+            DMM見放題chライトは月額550円でAVやバラエティが見放題のサブスク型サービスです。
+            実際に登録して体験してみたところ、コスパの良さが魅力的でした。
+          </p>
+
+          <h3>おすすめ作品</h3>
+          <ul>
+            <li>三上悠亜「彼女とイチャラブ旅行」</li>
+            <li>天使もえ「ずっと密着、我慢できない誘惑」</li>
+          </ul>
+
+          <h3>まとめ</h3>
+          <p>
+            古めの作品が中心ですが、人気女優の名作が多数。暇つぶしには最適です。
+            スマホでも快適に視聴でき、コスパは非常に高いと感じました。
+          </p>
+
+          <p class="affiliate-link">
+            👉 <a href="https://px.a8.net/svt/ejp?a8mat=XXXXX" target="_blank" rel="noopener noreferrer">
+              【公式】DMM見放題chライトに登録する
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 リバイブAVレビュー</p>
+  </footer>
+</body>
+</html>
