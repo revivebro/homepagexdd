@@ -1,82 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>おすすめ同人作品紹介 - DLsiteアフィリエイト</title>
-  <meta name="description" content="DLsiteでおすすめの同人作品を画像付きで紹介中。お得なセール情報もあり！">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>漫画サンプルビューア</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 1rem;
-      background-color: #f5f5f5;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f4f4f4;
     }
-    .container {
+
+    .viewer-container {
       max-width: 800px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: scale(1.01);
-    }
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .card-content {
+      margin: 0 auto;
       padding: 1rem;
     }
-    .title {
-      font-size: 1.2rem;
+
+    .viewer-title {
+      font-size: 1.5rem;
       font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-    .description {
-      font-size: 0.95rem;
       margin-bottom: 1rem;
-      color: #333;
+      text-align: center;
     }
-    .btn {
-      display: inline-block;
-      padding: 0.6rem 1.2rem;
-      background-color: #ff3366;
-      color: white;
+
+    .manga-page {
+      width: 100%;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
     }
-    .btn:hover {
-      background-color: #e62e5c;
+
+    @media (max-width: 600px) {
+      .viewer-container {
+        padding: 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <a href="https://dlaf.jp/books/dlaf/=/t/s/link/work/aid/parsleynx/id/BJ196544.html" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_main.jpg" alt="【催眠】性処理の為だけに催眠を使う最低な話。">
+  <div class="viewer-container">
+    <div class="viewer-title">【催眠】性処理の為だけに催眠を使う最低な話。<br>漫画サンプルビューア</div>
+
+    <!-- 漫画のサンプル画像を縦に表示 -->
+    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp1.jpg" alt="サンプル1" class="manga-page">
+    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp2.jpg" alt="サンプル2" class="manga-page">
+    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp3.jpg" alt="サンプル3" class="manga-page">
+    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp4.jpg" alt="サンプル4" class="manga-page">
+    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp5.jpg" alt="サンプル5" class="manga-page">
+
+    <!-- アフィリエイトリンク -->
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="https://dlaf.jp/books/dlaf/=/t/s/link/work/aid/parsleynx/id/BJ196544.html" 
+         style="display:inline-block; padding:1rem 2rem; background-color:#ff3366; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">
+        ▶ 作品の詳細を見る（DLsite）
       </a>
-      <div class="card-content">
-        <div class="title">【催眠】性処理の為だけに催眠を使う最低な話。</div>
-        <div class="description">
-          誘導するだけで女性を従順にする催眠術…？<br>
-          鬼畜でリアルなストーリー展開が魅力の音声作品。<br>
-          アブノーマルなシチュが好きな方におすすめ！
-        </div>
-        <a class="btn" href="https://dlaf.jp/books/dlaf/=/t/s/link/work/aid/parsleynx/id/BJ196544.html" target="_blank" rel="noopener noreferrer">
-          DLsiteで詳細を見る
-        </a>
-      </div>
     </div>
   </div>
 </body>
