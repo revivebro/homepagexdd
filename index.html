@@ -2,61 +2,86 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>漫画サンプルビューア</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>神エロ漫画紹介</title>
+  <meta name="description" content="おすすめのエロ漫画・同人作品を厳選紹介！DLsiteアフィリエイト対応">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f8;
+      color: #333;
     }
-
-    .viewer-container {
-      max-width: 800px;
-      margin: 0 auto;
+    header {
+      background: #ff3366;
+      color: white;
       padding: 1rem;
-    }
-
-    .viewer-title {
+      text-align: center;
       font-size: 1.5rem;
       font-weight: bold;
-      margin-bottom: 1rem;
-      text-align: center;
     }
-
-    .manga-page {
-      width: 100%;
-      margin-bottom: 1rem;
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      border-radius: 6px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      transition: transform 0.2s ease;
     }
-
-    @media (max-width: 600px) {
-      .viewer-container {
-        padding: 0.5rem;
-      }
+    .card:hover {
+      transform: scale(1.01);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .card-desc {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: #ff3366;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="viewer-container">
-    <div class="viewer-title">【催眠】性処理の為だけに催眠を使う最低な話。<br>漫画サンプルビューア</div>
-
-    <!-- 漫画のサンプル画像を縦に表示 -->
-    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp1.jpg" alt="サンプル1" class="manga-page">
-    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp2.jpg" alt="サンプル2" class="manga-page">
-    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp3.jpg" alt="サンプル3" class="manga-page">
-    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp4.jpg" alt="サンプル4" class="manga-page">
-    <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_smp5.jpg" alt="サンプル5" class="manga-page">
-
-    <!-- アフィリエイトリンク -->
-    <div style="text-align:center; margin-top:2rem;">
-      <a href="https://dlaf.jp/books/dlaf/=/t/s/link/work/aid/parsleynx/id/BJ196544.html" 
-         style="display:inline-block; padding:1rem 2rem; background-color:#ff3366; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">
-        ▶ 作品の詳細を見る（DLsite）
+  <header>神エロ漫画紹介</header>
+  <div class="container">
+    <!-- 作品カード -->
+    <div class="card">
+      <a href="BJ196544.html">
+        <img src="https://img.dlsite.jp/modpub/images2/work/books/BJ196000/BJ196544_img_main.jpg" alt="【催眠】性処理の為だけに催眠を使う最低な話。">
       </a>
+      <div class="card-content">
+        <div class="card-title">【催眠】性処理の為だけに催眠を使う最低な話。</div>
+        <div class="card-desc">
+          催眠を使って都合よく性処理させる背徳的な音声作品。鬼畜展開が好きな人にオススメ！
+        </div>
+        <a class="btn" href="BJ196544.html">作品を見る</a>
+      </div>
     </div>
+
+    <!-- ここに他作品も追加可能 -->
   </div>
 </body>
 </html>
