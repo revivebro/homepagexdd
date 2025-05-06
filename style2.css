@@ -1,0 +1,93 @@
+/* style2.css */
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* コンテナのスタイル */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* カードのスタイル */
+.card {
+    margin-bottom: 20px;
+}
+
+/* カードコンテンツのスタイル */
+.card-content {
+    padding: 15px;
+}
+
+/* タイトルのスタイル */
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* 説明文のスタイル */
+.card-desc {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* 画像のスタイル */
+.manga-page {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* ボタンのスタイル */
+.btn-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* リンクのスタイル */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 中央揃えのスタイル */
+.text-center {
+    text-align: center;
+}
