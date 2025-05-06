@@ -23,6 +23,10 @@ header {
   max-width: 960px;
   margin: 2rem auto;
   padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
 /* カード */
@@ -31,13 +35,23 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   overflow: hidden;
-  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* カード内画像 */
 .card img {
   width: 100%;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }
 
 /* カード内テキスト */
