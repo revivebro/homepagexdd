@@ -35,23 +35,17 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffe0b2; /* 明るいオレンジ */
 }
 
 /* カード内画像 */
 .card img {
   width: 100%;
   display: block;
-  transition: transform 0.3s ease;
-}
-
-.card:hover img {
-  transform: scale(1.05);
 }
 
 /* カード内テキスト */
